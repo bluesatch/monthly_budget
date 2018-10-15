@@ -28,30 +28,126 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 income1">
-                <h2>Satch Income</h2> 
-                <form action="#" id="satchinc" class="satchinc" name="satchinc" onsubmit="satchinc()">
-                    <label for="coding">Coding Academy:</label>
-                    <input type="number" id="coding" value="0">
-                    <label for="ssc">Social Security:</label>
-                    <input type="number" id="ssc" value="0">
-                </form>
-                <p>Satch's Total Income: <span id="income1 class="output1"></span></p>   
+    <div class="income">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 income1">
+                    <h2>satch income</h2> 
+                    <form action="#" id="satchinc" class="satchinc" name="satchinc" onsubmit="satchinc()">
+                        <label for="coding">Coding Academy:</label>
+                        <input type="number" id="coding" value="0">
+                        <label for="ssc">Social Security:</label>
+                        <input type="number" id="ssc" value="0">
+                    </form>
+                    <p>Satch's Total Income: <span id="income1 class="output1"></span></p>   
+                </div>
+                <div class="col-sm-6">
+                    <h2>pearl income</h2>
+                    <form action="#" id="pearlinc" class="pearlinc" name="pearlinc" onsubmit="pearlinc()">
+                        <label for="vertex">Vertex:</label>
+                        <input type="number" id="vertex" value="0">
+                        <label for="army">Military:</label>
+                        <input type="number" id="army" value="0">
+                    </form>
+                    <p>Pearl's Total Income: <span id="income2" class="output1"></span></p>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <h2>Pearl Income</h2>
-                <form action="#" id="pearlinc" class="pearlinc" name="pearlinc" onsubmit="pearlinc()">
-                    <label for="vertex">Vertex:</label>
-                    <input type="number" id="vertex" value="0">
-                    <label for="army">Military:</label>
-                    <input type="number" id="army" value="0">
-                </form>
-                <p>Pearl's Total Income: <span id="income2" class="output1"></span></p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="totalincome">Total income is: </p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="expenses">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>expenses</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>home expenses</h3>
+                    <form action="#" id="homeExpense" class="homeExpense" onsubmit ="homeExpense()">
+                        <ul>
+                            <li>Mortgage: <input type="number" id="mortgage" value="0"></li>
+                            <li>Entergy: <input type="number" id="entergy" value="0"></li>
+                            <li>Atmos: <input type="number" id="atmos" value="0"></li>
+                            <li>ADT: <input type="number" id="adt" value="0"></li>
+                            <li>First American: <input type="number" id="firstamerican" value="0"></li>
+                            <li>Water: <input type="number" id="water" value="0"></li>
+                            <li>Windows: <input type="number" id="windows" value="0"></li>
+                        </ul>
+                        <p class="totalhome">Total Home Expenses: </p>
+                    </form>
+                    <h3>life insurance</h3>
+                    <form action="#" id="lifeInsurance" class="lifeInsurance" onsubmit="lifeInsurance()">
+                        <ul>
+                            <li>Prudential: <input type="number" id="prudential" value="0"></li>
+                            <li>Primerica: <input type="number" id="primerica" value="0"></li>
+                        </ul>
+                    </form>
+                    <p class="totalInsurace">Total Insurace: </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>vehicles</h3>
+                    <form action="#" id="vehicles" class="vehicles" onsubmit="vehicles()">
+                        <ul>
+                            <li>F-150: <input type="number" id="f150" value="291.05"></li>
+                            <li>Highlander: <input type="number" id="highlander" value="405.63"></li>
+                            <li>Auto Insurance: <input type="number" id="autoins" value="308.78"></li>
+                        </ul>
+                    </form>
+                    <p class="totalvehicles">Total Vehicles: </p>
+                    <h3>credit cards</h3>
+                    <form action="#" id="creditCards" class="creditCards" onsubmit="creditCards()">
+                        <ul>
+                            <li>AMEX: <input type="number" id="amex" value="0"></li>
+                            <li>Home Depot: <input type="number" id="homeDepot" value="0"></li>
+                            <li>Capitol One:
+                                <ul>
+                                    <li>Satch: <input type="number" id="satchCO" value="0"></li>
+                                    <li>Pearl: <input type="number" id="pearlCO" value="0"></li>
+                                </ul>
+                            </li>
+                            <li>Belk:
+                                <ul>
+                                    <li>Satch: <input type="number" id="satchbelk" value="0"></li>
+                                    <li>Pearl: <input type="number" id="pearlbelk" value="0"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                    <p class="totalCreditCards">Total Credit Cards: </p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>entertainment</h3>
+                    <form action="#" id="entertainment" class="entertainment" onsubmit="entertainment()"></form>
+                    <ul>
+                        <li>Hulu: <input type="number" id="hulu" value="0"></li>
+                        <li>Netflix: <input type="number" id="netflix" value="0"></li>
+                        <li>Starz: <input type="number" id="starz" value="0"></li>
+                        <li>Apple Music: <input type="number" id="applemusic" value="0"></li>
+                        <li>ESPN+: <input type="number" id="espnplus" value="0"></li>
+                    </ul>
+                    <p class="totalentertainment">Total Entertainment: </p>
+                    <h3>miscellaneous</h3>
+                    <form action="#" id="misc" class="misc" onsubmit="misc()">
+                        <ul>
+                            <li>Hilton: <input type="number" id="Hilton" value="0"></li>
+                            <li>Kung Fu: <input type="number" id="kungfu" value="0"></li>
+                            <li>Navient: <input type="number" id="navient" value="0"></li>
+                            <li>Crunch Fitness: <input type="number" id="crunch" value="0"></li>
+                            <li>AT&T <input type="number" id="att" value="0"></li>
+                        </ul>
+                    </form>
+                    <p class="misc">Total Miscellaneous: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     
 </body>
