@@ -6,16 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Budget Worksheet</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="nav">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <ul>
-                        <li><a href="income">income</a></li>
-                        <li><a href="expenses">expenses</a></li>
-                        <li><a href="balance">balance</a></li>
+                    <ul id="top">
+                        <li><a href="#income">income</a></li>
+                        <li><a href="#expenses">expenses</a></li>
+                        <li><a href="#balance">balance</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,12 +33,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 income1">
-                    <h2>satch income</h2> 
+                    <h2 id="income">satch income</h2> 
                     <form action="#" id="satchinc" class="satchinc" name="satchinc" onsubmit="satchinc()">
                         <label for="coding">Coding Academy:</label>
                         <input type="number" id="coding" value="0">
-                        <label for="ssc">Social Security:</label>
+                        <label for="ssc">SSC:</label>
                         <input type="number" id="ssc" value="0">
+                        <input type="submit">
                     </form>
                     <p>Satch's Total Income: <span id="income1 class="output1"></span></p>   
                 </div>
@@ -48,6 +50,7 @@
                         <input type="number" id="vertex" value="0">
                         <label for="army">Military:</label>
                         <input type="number" id="army" value="0">
+                        <input type="submit">
                     </form>
                     <p>Pearl's Total Income: <span id="income2" class="output1"></span></p>
                 </div>
@@ -63,21 +66,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2>expenses</h2>
+                    <h2 id="expenses">expenses</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4" class="home">
                     <h3>home expenses</h3>
                     <form action="#" id="homeExpense" class="homeExpense" onsubmit ="homeExpense()">
                         <ul>
-                            <li>Mortgage: <input type="number" id="mortgage" value="0"></li>
-                            <li>Entergy: <input type="number" id="entergy" value="0"></li>
-                            <li>Atmos: <input type="number" id="atmos" value="0"></li>
-                            <li>ADT: <input type="number" id="adt" value="0"></li>
-                            <li>First American: <input type="number" id="firstamerican" value="0"></li>
-                            <li>Water: <input type="number" id="water" value="0"></li>
-                            <li>Windows: <input type="number" id="windows" value="0"></li>
+                            <li>Mortgage: <input type="number" id="mortgage" value="0" class="homex"></li>
+                            <li>Entergy: <input type="number" id="entergy" value="0" class="homex"></li>
+                            <li>Atmos: <input type="number" id="atmos" value="0" class="homex"></li>
+                            <li>ADT: <input type="number" id="adt" value="0" class="homex"></li>
+                            <li>First American: <input type="number" id="firstamerican" value="0" class="homex"></li>
+                            <li>Water: <input type="number" id="water" value="0" class="homex"></li>
+                            <li>Windows: <input type="number" id="windows" value="0" class="homex"></li>
                         </ul>
                         <p class="totalhome">Total Home Expenses: </p>
                     </form>
@@ -144,6 +147,28 @@
                     </form>
                     <p class="misc">Total Miscellaneous: </p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="totalexpenses">Total Expenses is: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="netincome">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="balance">Balance</h2>
+                    <p class="ni">Net Income/Loss: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="#top">Top of Page</a>
             </div>
         </div>
     </div>
