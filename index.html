@@ -34,14 +34,14 @@
             <div class="row">
                 <div class="col-sm-6 income1">
                     <h2 id="income">satch income</h2> 
-                    <form action="#" id="satchinc" class="satchinc" name="satchinc" onsubmit="satchinc()">
+                    <form action="#" id="satchinc" class="satchinc" name="satchinc" onsubmit="satchInc()">
                         <label for="coding">Coding Academy:</label>
                         <input type="number" id="coding" value="0">
                         <label for="ssc">SSC:</label>
                         <input type="number" id="ssc" value="0">
                         <input type="submit">
                     </form>
-                    <p>Satch's Total Income: <span id="income1 class="output1"></span></p>   
+                    <p>Satch's Total Income: <span id="income1" class="output"></span></p>   
                 </div>
                 <div class="col-sm-6">
                     <h2>pearl income</h2>
@@ -82,14 +82,17 @@
                             <li>Water: <input type="number" id="water" value="0" class="homex"></li>
                             <li>Windows: <input type="number" id="windows" value="0" class="homex"></li>
                         </ul>
-                        <p class="totalhome">Total Home Expenses: </p>
+                        <input type="submit">
                     </form>
+                    <p class="totalhome">Total Home Expenses: </p>
+                    
                     <h3>life insurance</h3>
                     <form action="#" id="lifeInsurance" class="lifeInsurance" onsubmit="lifeInsurance()">
                         <ul>
-                            <li>Prudential: <input type="number" id="prudential" value="0"></li>
-                            <li>Primerica: <input type="number" id="primerica" value="0"></li>
+                            <li>Prudential: <input type="number" id="prudential" value="0" class="lifin"></li>
+                            <li>Primerica: <input type="number" id="primerica" value="0" class="lifin"></li>
                         </ul>
+                        <input type="submit">
                     </form>
                     <p class="totalInsurace">Total Insurace: </p>
                 </div>
@@ -97,55 +100,60 @@
                     <h3>vehicles</h3>
                     <form action="#" id="vehicles" class="vehicles" onsubmit="vehicles()">
                         <ul>
-                            <li>F-150: <input type="number" id="f150" value="291.05"></li>
-                            <li>Highlander: <input type="number" id="highlander" value="405.63"></li>
-                            <li>Auto Insurance: <input type="number" id="autoins" value="308.78"></li>
+                            <li>F-150: <input type="number" id="f150" value="0" class="vehic"></li>
+                            <li>Highlander: <input type="number" id="highlander" value="0" class="vehic"></li>
+                            <li>Auto Insurance: <input type="number" id="autoins" value="0" class="vehic"></li>
                         </ul>
+                        <input type="submit">
                     </form>
                     <p class="totalvehicles">Total Vehicles: </p>
                     <h3>credit cards</h3>
                     <form action="#" id="creditCards" class="creditCards" onsubmit="creditCards()">
                         <ul>
-                            <li>AMEX: <input type="number" id="amex" value="0"></li>
-                            <li>Home Depot: <input type="number" id="homeDepot" value="0"></li>
+                            <li>AMEX: <input type="number" id="amex" value="0" class="crecar"></li>
+                            <li>Home Depot: <input type="number" id="homeDepot" value="0" class="crecar"></li>
                             <li>Capitol One:
                                 <ul>
-                                    <li>Satch: <input type="number" id="satchCO" value="0"></li>
-                                    <li>Pearl: <input type="number" id="pearlCO" value="0"></li>
+                                    <li>Satch: <input type="number" id="satchCO" value="0" class="crecar"></li>
+                                    <li>Pearl: <input type="number" id="pearlCO" value="0" class="crecar"></li>
                                 </ul>
                             </li>
                             <li>Belk:
                                 <ul>
-                                    <li>Satch: <input type="number" id="satchbelk" value="0"></li>
-                                    <li>Pearl: <input type="number" id="pearlbelk" value="0"></li>
+                                    <li>Satch: <input type="number" id="satchbelk" value="0" class="crecar"></li>
+                                    <li>Pearl: <input type="number" id="pearlbelk" value="0" class="crecar"></li>
                                 </ul>
                             </li>
                         </ul>
+                        <input type="submit">
                     </form>
                     <p class="totalCreditCards">Total Credit Cards: </p>
                 </div>
                 <div class="col-sm-4">
                     <h3>entertainment</h3>
-                    <form action="#" id="entertainment" class="entertainment" onsubmit="entertainment()"></form>
-                    <ul>
-                        <li>Hulu: <input type="number" id="hulu" value="0"></li>
-                        <li>Netflix: <input type="number" id="netflix" value="0"></li>
-                        <li>Starz: <input type="number" id="starz" value="0"></li>
-                        <li>Apple Music: <input type="number" id="applemusic" value="0"></li>
-                        <li>ESPN+: <input type="number" id="espnplus" value="0"></li>
-                    </ul>
+                    <form action="#" id="entertainment" class="entertainment" onsubmit="entertainment()">
+                        <ul>
+                            <li>Hulu: <input type="number" id="hulu" value="0" class="entertain"></li>
+                            <li>Netflix: <input type="number" id="netflix" value="0" class="entertain"></li>
+                            <li>Starz: <input type="number" id="starz" value="0" class="entertain"></li>
+                            <li>Apple Music: <input type="number" id="applemusic" value="0" class="entertain"></li>
+                            <li>ESPN+: <input type="number" id="espnplus" value="0" class="entertain"></li>
+                        </ul>
+                        <input type="submit">
+                    </form>
                     <p class="totalentertainment">Total Entertainment: </p>
                     <h3>miscellaneous</h3>
                     <form action="#" id="misc" class="misc" onsubmit="misc()">
                         <ul>
-                            <li>Hilton: <input type="number" id="Hilton" value="0"></li>
-                            <li>Kung Fu: <input type="number" id="kungfu" value="0"></li>
-                            <li>Navient: <input type="number" id="navient" value="0"></li>
-                            <li>Crunch Fitness: <input type="number" id="crunch" value="0"></li>
-                            <li>AT&T <input type="number" id="att" value="0"></li>
+                            <li>Hilton: <input type="number" id="Hilton" value="0" class="mis"></li>
+                            <li>Kung Fu: <input type="number" id="kungfu" value="0" class="mis"></li>
+                            <li>Navient: <input type="number" id="navient" value="0" class="mis"></li>
+                            <li>Crunch Fitness: <input type="number" id="crunch" value="0" class="mis"></li>
+                            <li>AT&T <input type="number" id="att" value="0" class="mis"></li>
                         </ul>
+                        <input type="submit">
                     </form>
-                    <p class="misc">Total Miscellaneous: </p>
+                    <p class="miscel">Total Miscellaneous: </p>
                 </div>
             </div>
             <div class="row">
@@ -172,8 +180,6 @@
             </div>
         </div>
     </div>
-    
-
-    
+    <script src="js/budgetcalc.js"></script>  
 </body>
 </html>
